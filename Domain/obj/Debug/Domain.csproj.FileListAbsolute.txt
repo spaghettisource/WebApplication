@@ -1,0 +1,14 @@
+D:\Project\WebApplication\Domain\bin\Debug\Domain.dll
+D:\Project\WebApplication\Domain\bin\Debug\Domain.pdb
+D:\Project\WebApplication\Domain\obj\Debug\Domain.dll
+D:\Project\WebApplication\Domain\obj\Debug\Domain.pdb
+E:\Project\WebApplication\Domain\bin\Debug\Domain.dll.config
+E:\Project\WebApplication\Domain\bin\Debug\Domain.dll
+E:\Project\WebApplication\Domain\bin\Debug\Domain.pdb
+E:\Project\WebApplication\Domain\bin\Debug\EntityFramework.dll
+E:\Project\WebApplication\Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\WebApplication\Domain\bin\Debug\EntityFramework.xml
+E:\Project\WebApplication\Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\WebApplication\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+E:\Project\WebApplication\Domain\obj\Debug\Domain.dll
+E:\Project\WebApplication\Domain\obj\Debug\Domain.pdb

@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Employees";
+}
+
+<h2>Employees</h2>
+<div ng-app="Employees">
+    <div ng-controller="EmployeesCtrl">
+        <div class="col-lg-12">
+            <div class="col-lg-4"><strong>First name</strong></div>
+            <div class="col-lg-4"><strong>Middle name</strong></div>
+            <div class="col-lg-4"><strong>Lastn name</strong></div>
+            <div class="row" ng-repeat="emp in AllEmployees">
+                <div class="col-lg-4">{{emp.FirstName}}</div>
+                <div class="col-lg-4">{{emp.MiddleName}}</div>
+                <div class="col-lg-4">{{emp.FirstName}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var app = angular.module('Employees', []);
+
+    app.controller('EmployeesCtrl', function ($scope, EmployeesFactory, $http) {
+        $scope.GetEmployees = function () {
+            EmployeesFactory.GetEmployees().
+            then(function (response) {
+                $scope.AllEmployees = response.data;
+            }, function (response) {
+                $scope.data = response.data || 'Request failed';
+                $scope.status = response.status;
+            });
+        }
+
+        function init() {
+            $scope.GetEmployees();
+        }
+
+        init();
+    });
+
+    app.factory('EmployeesFactory', function ($http) {
+        return {
+            GetEmployees: function () {
+                return $http.get('/GetEmployees');
+            }
+        }
+    });
+</script>
